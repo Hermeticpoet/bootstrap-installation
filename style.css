@@ -1,0 +1,90 @@
+body {
+    font-family: 'Roboto Slab', serif;
+}
+
+/*-- Containers --*/
+
+.alert-container {
+    
+}
+
+.callout-container {
+    height: 100vh;
+    background: url("images/whiskey.jpg") no-repeat center center fixed; 
+     -webkit-background-size: cover;
+     -moz-background-size: cover;
+     -o-background-size: cover;
+     background-size: cover;
+     
+     display: flex;
+     align-items: center;
+}
+
+/*--Jumbotron--*/
+
+.jumbotron {
+    background: transparent;
+}
+
+.jumbotron h1 {
+    color: #e2d6d6;
+    font-weight: 400;
+    margin-bottom: 25px;
+}
+
+.jumbotron .lead {
+    color: #ffffffde;
+    margin: 20px 0;
+}
+
+.jumbotron small {
+    color: #e2d6d6;
+    font-style: italic;
+    font-size: 60%;
+}
+.quotes-container {
+    
+}
+
+.features-container {
+    
+}
+
+.favorites-container {
+    
+}
+
+/*-- /.containers --*/
+
+/*---block dividers--*/
+
+.block-divider {
+    width: 65px;
+    height: 5px;
+    border: 0;
+}
+
+.block-divider--red {
+    background-color: #ff2a06;
+}
+
+.block-divider--short {
+    width: 40px;
+}
+
+.opaque-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, .4);
+}
+
+.navbar .navbar-inverse {
+    border-radius: 0px;
+}
+
+table, th, td {
+    border: solid 2px #000;
+}

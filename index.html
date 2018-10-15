@@ -6,37 +6,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Whiskey Drop | Taste a new whiskey every month</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" href="main.css" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" type="text/css" />
 </head>
 
 <body>
-        <!--Nav-->
+    <!--
     <nav class="navbar navbar-inverse">
         <div class="container-fluid">
-            <!--Logo-->
+            
             <div class="navbar-header">
                 <a href="/" class="navbar-brand">
                     Whiskey Drop
                 </a>
             </div>
 
-            <!--Navbar-->
-            <ul class="nav navbar-nav navbar-inverse">
+           
+            <ul class="nav navbar-nav">
                 <li class="active"><a href="/">Home</a></li>
                 <li><a href="">About</a></li>
                 <li class="visible-xs"><a href="">Sign In</a></li>
             </ul>
 
-            <!--Message-->
+            
             <div class="navbar-header navbar-right hidden-xs">
-                <a href="/login" class='btn btn-default navbar-btn'>Sign Up</a>
+                <a href="/login" class='btn btn-default navbar-btn'>Log-In</a>
                 <p class="navbar-text"><i>Great whiskey delivered to your door</i></p>
             </div>
         </div>
-    </nav>
-    <article class="container">
-        
-                <!--Alert-->
+    </nav> -->
+    <!--Alert
+    <div class="container alert-container">
         <div class="row hidden-xs">
             <div class="col-md-12">
                 <div class="alert alert-warning">
@@ -44,21 +44,25 @@
                 </div>
             </div>
         </div>
-        
+    </div>
+    -->
+    <div class="container-fluid callout-container">
+        <div class="opaque-overlay"></div>
         <!-- Callout -->
         <div class="row">
             <div class="col-xs-12">
-                <section class="callout">
+                <section class="callout jumbotron text-center">
                     <h1>The finest whiskeys delivered to your doorstep.</h1>
+                    <hr class="block-divider block-divider--red">
                     <p class="lead">Sign up today to start receiving the world's best whiskeys every month. <s>€19.99</s><strong><mark>First one is free!</mark></strong></p>
                     <p class="text-muted"><small>You must be over 18 to use our service. Please drink responsibly</small></p>
-                    <div><button class="btn btn-lg btn-success">Sign Up!</button></div>
+                    <div><button class="btn btn-lg btn-success" data-toggle="modal" data-target="#signUpModal">Sign Up!</button></div>
                 </section>
             </div>
         </div>
         <!-- /.callout -->
-        <hr>
-
+     </div>
+     <div class="container qoutes-container">
         <!-- Quotes -->
         <section class="quotes">
             <div class="row">
@@ -82,8 +86,8 @@
             </div>
         </section>
         <!-- /.quotes -->
-        <hr>
-
+    </div>
+    <div class="container features-container">
         <!-- Features -->
         <section class="features">
             <div class="row">
@@ -115,6 +119,8 @@
                 </div>
             </div>
         </section>
+    </div>
+    <div class="container favorites-container">
         <section class="monthly-favorites">
             <div class="row">
                 <div class="col-xs-12">
@@ -153,18 +159,32 @@
             </div>
         </section>
         <!-- /.features -->
-    </article>
+    </div>
     
     <!-- Modal -->
-    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal fade" id="signUpModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                    <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+                    <h4 class="modal-title" id="myModalLabel">Sign Up for Whiskey Drop</h4>
                 </div>
                 <div class="modal-body">
-                    ...
+                    <form>
+                        <div class="form-group">
+                            <label for="email">Email address</label>
+                            <input type="email" class="form-control" id="email" placeholder="Email">
+                        </div>
+                        <p class="help-block">We'll <strong>never</strong> share your email address with anyone</p>
+                        <div class="form-group">
+                            <label for="password">Password</label>
+                            <input type="password" class="form-control" id="password" placeholder="Password">
+                        </div>
+                        <div class="form-group">
+                            <label for="passwordRepeat">Repeat Password</label>
+                            <input type="password" class="form-control" id="passwordRepeat" placeholder="Repeat Your Password">
+                        </div>
+                    </form>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -177,4 +197,5 @@
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 </body>
+
 </html>
